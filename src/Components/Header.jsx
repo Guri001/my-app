@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/header.css";
+import { click } from "@testing-library/user-event/dist/click";
 function Header() {
   return (
     <div className="header">
@@ -41,11 +42,7 @@ function Header() {
           <img alt=" " className="upload-icon" src="icons/upload.svg" />
           <div className="tooltip">Create</div>
         </div>
-        {/* <img
-          alt=" "
-          className="youtube-apps-icon"
-          src="icons/youtube-apps.svg"
-        /> */}
+
         <div className="notifications-icon-container">
           <img
             alt=" "
@@ -55,12 +52,15 @@ function Header() {
           <div className="notifications-count">3</div>
           <div className="tooltip">Notifications</div>
         </div>
-        <img
-          alt=" "
-          className="current-user-picture"
-          src="channel-pictures/my-channel.jpg"
-        />
-        <div className="my-channel-info"></div>
+        <div className="my-profile">
+          <button className="profile-pic">
+            <img
+              alt=" "
+              className="current-user-picture"
+              src="channel-pictures/my-channel.jpg"
+            />
+          </button>
+        </div>
       </div>
     </div>
   );

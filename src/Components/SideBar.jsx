@@ -19,25 +19,22 @@ function SideBar() {
       </section>
       <section className="user-link">
         <div className="sidebar-link">You &#62;</div>
+
         <div className="sidebar-link">
-          <img src="icons/home.svg" alt=" " />
-          <span>Home</span>
-        </div>
-        <div className="sidebar-link">
-          <img src="icons/youtube-shorts.svg" alt=" " />
+          <img src="icons/butler-icon.svg" alt=" " />
           <span>Your Channel</span>
         </div>
         <div className="sidebar-link">
-          <img src="icons/subscriptions.svg" alt=" " />
+          <img src="icons/history-icon.webp" alt=" " />
           <span>History</span>
         </div>
         <div className="sidebar-link">
-          <img src="icons/originals.svg" alt=" " />
+          <img src="icons/watch-later-icon.webp" alt=" " />
           <span>Watch Later</span>
         </div>
 
         <div className="sidebar-link">
-          <img src="icons/library.svg" alt=" " />
+          <img src="icons/arrow-down-icon.webp" alt=" " />
           <span>Show More</span>
         </div>
       </section>
