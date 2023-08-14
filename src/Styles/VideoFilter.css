@@ -1,0 +1,21 @@
+.filter-container {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+
+  margin-bottom: 30px;
+}
+.Filter-types {
+  border-radius: 8px;
+  margin: 12px 12px 12px 12px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 8px 12px;
+  color: black;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.Filter-types:hover {
+  background-color: rgb(221, 206, 206);
+}
