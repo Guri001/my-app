@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Box({ className, filled = 0, value, b, f }) {
+export default function Box({ className, filled = 0, value, b, f, s }) {
     return (
-        <div className={className} filled={filled} bounce={b} flip={f}>
+        <div className={className} filled={filled} bounce={b} flip={f} shake={s}>
             {value}
         </div>
     );

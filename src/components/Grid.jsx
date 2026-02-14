@@ -2,7 +2,7 @@ import React from "react";
 import "../App.scss";
 import Box from "./Box";
 
-export default function Grid({ data, color, bounce, flip }) {
+export default function Grid({ data, color, bounce, flip, shake }) {
     const Boxes = ({ data, color }) => {
         return data.map((row, i) =>
             row.map((cell, j) => {
@@ -24,6 +24,7 @@ export default function Grid({ data, color, bounce, flip }) {
                         value={data[i][j]}
                         b = { (bounce[0] === i && bounce[1] === j)? "1" : "0"}
                         f = { (flip[0] === i && flip[1] === j)? "1" : "0"}
+                        s = { (shake === i)? "1" : "0"}
                     />
                 );
             })

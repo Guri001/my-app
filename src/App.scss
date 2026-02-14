@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
 
 $primary: #fff;
 $background: #121213;
@@ -14,20 +14,19 @@ $small: 550px;
 $medium: 900px;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #121213;
-    color: #fff;
-    font-size: 25px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #121213;
+  color: #fff;
+  font-size: 25px;
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
 }
-
 
 // hr {
 //     border : 1px solid $bordercolor;
@@ -39,319 +38,332 @@ body {
 
   */
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid 0.8px rgb(59, 59, 59);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 0.8px rgb(59, 59, 59);
 
-    .Header {
-        font-size: 1.5rem;
-        font-weight: bold;
-        letter-spacing: 1px;
-        padding: 2px 5px;
-        font-family: "Playfair Display", serif;
-    }
+  .Header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 2px 5px;
+    font-family: "Playfair Display", serif;
+  }
 
-    .Rightnav {
-        .Helpmenu {
-            padding: 0 10px;
-        }
+  .Rightnav {
+    .Helpmenu {
+      padding: 0 10px;
     }
+  }
 
-    .Rightnav {
-        .Helpmenu {
-            padding: 0 10px;
-        }
+  .Rightnav {
+    .Helpmenu {
+      padding: 0 10px;
     }
+  }
 }
 
 .board {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .Grid {
-        margin-top: 5vh;
+  .Grid {
+    margin-top: 5vh;
 
-        display: grid;
-        gap: 5px;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(6, auto);
-
-    }
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, auto);
+  }
 }
 
 .box {
-    height: 7vh;
-    width: 7vh;
-    font-size: 3vh;
-    line-height: 6vh;
-    text-align: center;
-    border: solid 2px rgb(58, 58, 58);
-    // box-shadow:inset 0 0 0 1px rgb(68, 68, 68);
-    font-weight: bold;
+  height: 7vh;
+  width: 7vh;
+  font-size: 3vh;
+  line-height: 6vh;
+  text-align: center;
+  border: solid 2px rgb(58, 58, 58);
+  // box-shadow:inset 0 0 0 1px rgb(68, 68, 68);
+  font-weight: bold;
 }
 
-  
-
-
 .box[filled="1"] {
-    border: solid 2px rgb(92, 92, 92);
+  border: solid 2px rgb(92, 92, 92);
 }
 
 .box[bounce="1"] {
-    border: solid 2px rgb(92, 92, 92);
-    animation: bounce 100ms ease-in;
+  border: solid 2px rgb(92, 92, 92);
+  animation: bounce 100ms ease-in;
 }
 
 .box[flip="1"] {
-    border: solid 2px rgb(92, 92, 92);
-    animation: flip 400ms ease-in;
+  border: solid 2px rgb(92, 92, 92);
+  animation: flip 400ms ease-in;
+}
+
+.box[shake="1"] {
+  border: solid 2px red;
+  animation: shake 500ms ease-in-out;
 }
 
 // .bounce{
 //     animation: bounce 100ms ease-in;
 // }
 
-@keyframes flip{
-    0%{
-        transform: rotateX(90deg);
-    }
-    100%{
-        transform: rotateX(0deg);
-    }
+@keyframes flip {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }
 
-@keyframes bounce{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    100%{
-        transform: scale(1);
-    }
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
 }
 
 .stats {
-    height: 4vh;
-    width: 4vh;
-    font-size: 3vh;
-    line-height: 6vh;
-    text-align: center;
-    border: solid 2px rgb(58, 58, 58);
-    // box-shadow:inset 0 0 0 1px rgb(68, 68, 68);
+  height: 4vh;
+  width: 4vh;
+  font-size: 3vh;
+  line-height: 6vh;
+  text-align: center;
+  border: solid 2px rgb(58, 58, 58);
+  // box-shadow:inset 0 0 0 1px rgb(68, 68, 68);
 }
 
-.restart-btn{
-    margin: 15px auto;
-    padding: 5px 10px;
+.restart-btn {
+  margin: 15px auto;
+  padding: 5px 10px;
 
-    font-size: 0.6em;
-    font-weight: light;
-    letter-spacing: 2px;
+  font-size: 0.6em;
+  font-weight: light;
+  letter-spacing: 2px;
 
-    border-radius: 3px;
-    border: solid 2px grey;
-
-    
+  border-radius: 3px;
+  border: solid 2px grey;
 }
 
-.restart-btn:hover{
-    background-color: #3a3a3c;
-    perspective: 60px;
-    &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        transform-style: preserve-3d;
-        left: 50%;
-        transform: translateX(-50%) rotateX(45deg);
-        width: 60px;
-        height: 2px;
-        background-color: red;
-        margin-top: 25px;
-        border-radius: 30%;
-        background: linear-gradient(175deg, rgb(66, 66, 66) 0%, rgb(54, 54, 54) 34%, rgb(58, 58, 58) 100%);
-        box-shadow: 0 0 5px 10px rgb(54, 54, 54);
-    }
+.restart-btn:hover {
+  background-color: #3a3a3c;
+  perspective: 60px;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform-style: preserve-3d;
+    left: 50%;
+    transform: translateX(-50%) rotateX(45deg);
+    width: 60px;
+    height: 2px;
+    background-color: red;
+    margin-top: 25px;
+    border-radius: 30%;
+    background: linear-gradient(
+      175deg,
+      rgb(66, 66, 66) 0%,
+      rgb(54, 54, 54) 34%,
+      rgb(58, 58, 58) 100%
+    );
+    box-shadow: 0 0 5px 10px rgb(54, 54, 54);
+  }
 }
-
 
 .Green {
-    background-color: $correct;
+  background-color: $correct;
 }
 
 .Yellow {
-    background-color: $present;
+  background-color: $present;
 }
 
 .Grey {
-    background-color: $absent;
+  background-color: $absent;
 }
 
 .normal {
-    background-color: $normalkey;
-    border: solid 1px grey;
+  background-color: $normalkey;
+  border: solid 1px grey;
 }
 
 .keyboard {
-    position: absolute;
-    bottom: 1vh;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
 
-    margin: 0 auto;
-    .keyboard-row {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+  margin: 0 auto;
+  .keyboard-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
-        .key {
-            width: 40px;
-            height: 60px;
-            margin: 4px;
-            
-            border-radius: 6px;
-            
-            cursor: pointer;
-            font-size: 12px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
+    .key {
+      width: 40px;
+      height: 60px;
+      margin: 4px;
 
-            text-align: center;
-            vertical-align: middle;
-            line-height: 60px;
+      border-radius: 6px;
 
-            .DeleteIcon{
-                margin-top: 14px;
-                height: 30px;
-                background-color: grey;
-            }
+      cursor: pointer;
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
 
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
-        .key[value="ENTER"]{
-            width: 70px;
-        }
-        .key[value="DELETE"]{
-            width: 60px;
-        }
-        @media screen and (max-width: $small) {
-            .key{
-                height: 55px;
-                line-height: 55px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 60px;
 
-                width: 7.8vw;
-                margin: 0.8vw;
+      .DeleteIcon {
+        margin-top: 14px;
+        height: 30px;
+        background-color: grey;
+      }
 
-                .DeleteIcon{
-                    margin: 12px;
-                    height: 27px;
-                    width: 8vw;
-                }
-            }
-            .key[value="ENTER"]{
-                width: 13vw;
-            }
-            .key[value="DELETE"]{
-                width: 15vw;
-            }
-        }
+      &:hover {
+        transform: scale(1.1);
+      }
     }
+    .key[value="ENTER"] {
+      width: 70px;
+    }
+    .key[value="DELETE"] {
+      width: 60px;
+    }
+    @media screen and (max-width: $small) {
+      .key {
+        height: 55px;
+        line-height: 55px;
+
+        width: 7.8vw;
+        margin: 0.8vw;
+
+        .DeleteIcon {
+          margin: 12px;
+          height: 27px;
+          width: 8vw;
+        }
+      }
+      .key[value="ENTER"] {
+        width: 13vw;
+      }
+      .key[value="DELETE"] {
+        width: 15vw;
+      }
+    }
+  }
 }
 
+.modal-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 
-.modal-bg{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
+  background: rgba(18, 18, 19, 0.95);
 
-    background:rgba(18, 18, 19, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  .modal {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .modal{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        width: min(400px, 70vw);
-        height: min(500px, 70vh);
-
-    }
-
-    
-
-    
+    width: min(400px, 70vw);
+    height: min(500px, 70vh);
+  }
 }
 
 .modal-bg-htp {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background:rgba(18, 18, 19, 0.95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(18, 18, 19, 0.95);
 
-    
-
-    .tutorial {
-        display: flex;
-        flex-direction: column;
-        // align-items: flex-start;
-        width: min(500px,100vw);
-        margin: 0 auto;
-        .heading {
-            display: flex;
-            justify-content: space-between;
-        }
-
-
-
-        .htp-heading {
-            position: relative;
-            justify-self: center;
-            text-align: center;
-            font-size: 22px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin : 10px;
-            font-weight: bold;
-
-            .cross {
-                position: absolute;
-                padding: 2px;
-                right: 0;
-            }
-        }
-
-        .examples {
-            border-top: 1px solid $bordercolor;
-            border-bottom: 1px solid $bordercolor;
-        }
-
-        p {
-            font-size: 16px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin : 10px;
-        }
-        h2 {
-            font-size: 18px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin : 10px;
-        }
-        .example {
-            margin-left: 10px;
-            display: flex;
-            gap: 12px;
-        }
+  .tutorial {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    width: min(500px, 100vw);
+    margin: 0 auto;
+    .heading {
+      display: flex;
+      justify-content: space-between;
     }
+
+    .htp-heading {
+      position: relative;
+      justify-self: center;
+      text-align: center;
+      font-size: 22px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 10px;
+      font-weight: bold;
+
+      .cross {
+        position: absolute;
+        padding: 2px;
+        right: 0;
+      }
+    }
+
+    .examples {
+      border-top: 1px solid $bordercolor;
+      border-bottom: 1px solid $bordercolor;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 10px;
+    }
+    h2 {
+      font-size: 18px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 10px;
+    }
+    .example {
+      margin-left: 10px;
+      display: flex;
+      gap: 12px;
+    }
+  }
 }
